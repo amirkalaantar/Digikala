@@ -247,7 +247,34 @@ body {
 }
 
 .footer-container {
-    border: rgb(0, 102, 255) solid 1px;
+    /* border: rgb(0, 102, 255) solid 1px; */
+    direction: rtl;
+    height: auto;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoback {
+    display: flex;
+    border: brown 1px solid;
+}
+
+.call {
+    border: cyan 1px solid;
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: space-around;
+    border: darkgreen 1px solid;
+}
+
+.footer-columns {
+    display: flex;
+    border: 1px solid salmon;
 }
 
 
