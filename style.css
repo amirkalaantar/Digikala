@@ -183,8 +183,8 @@ body {
     'left-bottom big-right big-right';
     gap: 20px;
     padding: 40px;
-    height: 500px;
-    /* border: blueviolet 1px solid; */
+    height: auto;
+    border: blueviolet 1px solid;
     
 }
 
@@ -200,15 +200,15 @@ body {
     grid-area: big-right;
 }
 
-.three-container div {
-    /* border: green 1px solid; */
-    border-radius: 20px;
+/*.three-container div {
+    border: green 1px solid;
     
-    box-shadow: 0 0 5px 1px rgb(219, 219, 219);
+    
+    
 }
 
 .offer-container {
-    /* border: red solid 1px; */
+    border: red solid 1px;
     display: flex;
     justify-content: center;
     height: auto;
@@ -218,7 +218,7 @@ body {
 }
 
 .offer-container div {
-    /* border: blue 1px solid; */
+    border: blue 1px solid;
     box-shadow: 0 0 5px 1px grey;
     display: flex;
     flex-direction: column;
@@ -237,17 +237,17 @@ body {
 }
 
 .categories-header {
-    /* border: 1px solid black; */
+    border: 1px solid black;
 }
 
 .categories-bottom {
     display: flex;
-    /* border: hotpink 1px solid; */
+    border: hotpink 1px solid;
     justify-content: space-between;
 }
 
 .footer-container {
-    /* border: rgb(0, 102, 255) solid 1px; */
+    border: rgb(0, 102, 255) solid 1px;
     direction: rtl;
     height: auto;
 }
@@ -275,6 +275,142 @@ body {
 .footer-columns {
     display: flex;
     border: 1px solid salmon;
+}*/
+
+.right-big {
+    background-image: url('mobile.png') ,
+    radial-gradient(circle at -10% 0 ,rgb(89, 154, 253) 20% , rgb(82, 108, 255));
+    background-repeat: no-repeat , no-repeat;
+    background-size: 360px 350px , cover;
+    background-position: 50px 65px , 0 0 ;
+    display: flex; 
+    justify-content: right;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.right-big-item {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    right: 100px;
+}
+
+ .right-big-main {
+    text-align: center;
+    color: white;
+    
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    /* border: green 1px solid; */
+    
+}
+
+.takhfif {
+    /* border: 1px red solid; */
+    font-size: 33px;
+}
+.smaller {
+    font-size: 24px;
+    font-weight: lighter;
+    /* border: 1px solid blue; */
+    text-align: right;
+    opacity: .91;
+}
+
+.buy {
+    /* font-size: 20px; */
+    /* align-self: center; */
+    /* color: rgb(58, 58, 58); */
+    position: relative;
+    right: 8px;
+    /* padding: 2px; */
+    /* height: 30px; */
+    
+}
+
+.buy p {
+    background-color:rgb(221, 221, 221) ;
+    color: rgb(27, 27, 27);
+    padding: 0 10px;
+    border-radius: 10px 2px 2px 10px;
+}
+
+.buyflex {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+}
+
+.right-big-back {
+    background-color: rgb(255, 62, 62);
+    width: 100px;
+    height: 90px;
+    text-align: center;
+    color: white;
+    border-radius: 5px 30px 30px 5px ;
+    /* border: rgb(20, 180, 255) 1px solid; */
+} 
+
+ .bigsize {
+    font-size: 42px;
+    position: relative;
+    bottom: 12px;
+    
+}
+
+.topbig {
+    position: relative;
+    top: 8px;
+    right: 1px;
+}
+
+.left-top {
+    background-image: url('super.png') ,
+    radial-gradient(circle at -30% 0 ,rgb(157, 134, 209) , rgb(142, 39, 173));
+    background-repeat: no-repeat;
+    background-size: 200px 200px ,cover;
+    background-position: 30px 15px, 0 0;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 30px;
+    height: 230px;
+}
+
+.left-top div {
+    /* border: red 1px solid; */
+    text-align: center;
+    color: white;
+    position: relative;
+    right: 30px;
+    font-size: larger;
+}
+
+.left-bottom {
+    background-image: url('lebas.png') , 
+    radial-gradient(circle at -30% 0 ,rgb(102, 235, 69),rgb(39, 189, 26)  );
+    background-repeat: no-repeat , no-repeat;
+    background-size: 180px 180px , cover;
+    background-position: 30px 26px , 0 0;
+    /* border: 1px solid black; */
+    height: 230px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: right;
+}
+
+.left-bottom div {
+    text-align: center;
+    color: white;
+    position: relative;
+    right: 30px;
+    top: 40px;
+    font-size: larger;
 }
 
 
