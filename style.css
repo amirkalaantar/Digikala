@@ -166,7 +166,7 @@ body {
     'left-top big-right big-right'
     'left-bottom big-right big-right';
     gap: 20px;
-    padding: 20px 30px;
+    padding: 20px 20px;
     height: auto;  
 }
 
@@ -356,26 +356,80 @@ body {
 }
 
 
-/*.categories-container {
-    border: red 1px solid;
+.categories-container {
+    /* border: red 1px solid; */
     display: flex;
     flex-direction: column;
     height: auto;
-    margin: 20px;
+    margin: 30px 20px 20px;
     border-radius: 10px;
+    box-shadow: 0 0 8px 1px rgb(197, 197, 197);
 }
 
 .categories-header {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    text-align: center;
+    color: rgb(100, 100, 100);
+    font-size: 21px;
+    margin-top: 6px;
 }
 
 .categories-bottom {
     display: flex;
-    border: hotpink 1px solid;
+    /* border: hotpink 1px solid; */
+    justify-content: space-around;
+    margin-top: 13px;
+    margin-bottom: 10px;
+}
+
+.cate {
+    /* border: 1px solid red; */
+    width: 120px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.footer-container {
+.cate-icon {
+    font-size: 13px;
+    text-align: center;
+    /* background-color: rgb(102, 235, 69); */
+    color: rgb(51, 51, 51);
+}
+
+.cate-icon::before{
+    display: block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    font-size: 29px;
+    margin-bottom: 7px;
+    color: rgb(78, 157, 248);
+}
+
+.icon1::before { content:"\f109";}
+.icon2::before { content:"\f0ad";}
+.icon3::before { content:"\f553";}
+.icon4::before { content:"\f1ae";}
+.icon5::before { content:"\f004";}
+.icon6::before { content:"\f4b8";}
+.icon7::before { content:"\f5ae";}
+.icon8::before { content:"\f6bb";}
+.icon9::before { content:"\f291";}
+.icon10::before { content:"\f557";}
+
+.variety {
+    text-align: center;
+    font-size: 13px;
+    color: rgb(78, 157, 248);
+    margin-top: 6px;
+}
+
+/*.footer-container {
     border: rgb(0, 102, 255) solid 1px;
     direction: rtl;
     height: auto;
