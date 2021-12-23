@@ -429,36 +429,148 @@ body {
     margin-top: 6px;
 }
 
-/*.footer-container {
-    border: rgb(0, 102, 255) solid 1px;
+.footer-container {
+    /* border: rgb(0, 102, 255) solid 1px; */
     direction: rtl;
     height: auto;
+    padding: 10px 30px;
+    background-color: rgb(243, 243, 243);
 }
 
 .footer-top {
     display: flex;
     flex-direction: column;
+    margin-top: 10px;
 }
 
 .logoback {
     display: flex;
-    border: brown 1px solid;
+    /* border: brown 1px solid; */
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logoback a {
+    text-decoration: none;
+    border: grey 1px solid;
+    display: inline-block;
+    font-weight: 100;
+    color: rgb(85, 85, 85);
+    padding: 0 10px;
+    border-radius: 5px;
 }
 
 .call {
-    border: cyan 1px solid;
+    /* border: cyan 1px solid; */
+    color: rgb(48, 48, 48);
+    font-size: 14px;
+    font-weight: lighter;
+    margin-top: 4px;
 }
 
 .footer-icons {
     display: flex;
     justify-content: space-around;
-    border: darkgreen 1px solid;
+    /* border: darkgreen 1px solid; */
+    margin-top: 40px;
+}
+
+.footer-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid green; */
+    color: rgb(104, 104, 104);
+    font-size: 14px;
+}
+
+.footer-icon::before {
+    display:block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f007";
+    font-size: 30px;
+    color: rgb(46, 46, 46);
+    margin-bottom: 7px;
+}
+
+.icon11::before {
+    content: "\f48b";
+}
+.icon12::before {
+    content: "\f09d";
+}
+.icon13::before {
+    content: "\f590";
+}
+.icon14::before {
+    content: "\f0e2";
+}
+.icon15::before {
+    content: "\f2b5";
 }
 
 .footer-columns {
     display: flex;
-    border: 1px solid salmon;
+    /* border: 1px solid salmon; */
+    justify-content: space-between;
 } 
+
+.footer-column {
+    /* border: green 1px solid; */
+    font-size: 19px;
+    color: rgb(110, 110, 110);
+}
+
+.footer-column div:first-child {
+    margin-bottom: 3px;
+    color: rgb(34, 34, 34);
+}
+
+.col4 {
+    display: flex;
+    flex-direction: column;
+    /* border: green  1px solid; */
+    justify-content: space-between;
+    flex-basis: 300px;
+}
+
+.right-column-icons {
+    display: flex;
+    font-size: 26px;
+    gap: 20px;
+}
+
+.info {
+    font-size: 16.5px;
+}
+
+.email-input {
+    height: 40px;
+    width: 250px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: .5px solid rgb(177, 177, 177);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.email-submit {
+    border: 1px solid rgb(177, 177, 177);
+    background-color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding: 7px 20px;
+    border-radius: 5px;
+    color: grey;
+}
 
 
 
