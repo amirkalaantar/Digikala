@@ -572,9 +572,65 @@ body {
     color: grey;
 }
 
+.footer-end {
+    display:flex;
+    margin-top: 30px;
+}
 
+.footer-right-end {
+    flex: 70%;
+    /* border: solid 1px red; */
+    padding-left: 50px;
+    text-align: justify;
+}
 
+.footer-right-end div {
+    color: rgb(44, 44, 44);
+    font-size: 17px;
+}
 
+.footer-right-end small {
+    color: rgb(148, 148, 148);
+}
+
+.footer-left-end {
+    flex: 30%;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /* border: green 1px solid; */
+    align-items: center;
+    
+    margin-top: 35px;
+}
+
+.namad {
+    width: 120px;
+    height: 120px;
+    border: rgb(189, 189, 189) 1px solid;
+    border-radius: 15px;
+}
+
+.namad1 {
+    background-image: url('neshanmeli.jpg');
+    background-size: 150px 100px;
+    background-position: -15px 10px;
+    background-repeat: no-repeat;
+}
+
+.namad2 {
+    background-image:url('etehadie\ keshvari.png');
+    background-size: 80px 90px;
+    background-repeat: no-repeat;
+    background-position: 20px 13px;
+}
+
+.namad3 {
+    background-image:url('etemad.jpg');
+    background-size: 200px 100px;
+    background-repeat: no-repeat;
+    background-position: -42px 8px;
+}
 
 
 
