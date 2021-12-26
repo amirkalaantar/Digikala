@@ -3,7 +3,7 @@
 body {
     margin: 0;
     background-color: rgb(231, 230, 230);
-    font-family: yekan;
+    font-family: yekan , Arial, Helvetica, sans-serif;
     direction: rtl;
 }
 
@@ -43,10 +43,26 @@ body {
 }
 
 .order1 {
-    text-align: left;
+    /* border: 1px solid red; */
     flex-grow: 1;
     align-self: center;
     font-size: 25px;
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    color: rgb(179, 179, 179);
+    font-size:26px;
+    padding-left: 20px;
+    
+}
+
+.far {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.far:hover {
+    color: rgb(148, 148, 148);
 }
 
 .order2 {
@@ -58,10 +74,21 @@ body {
 
 .order2 input {
     height: 40px;
-    width: 800px;
+    width: 500px;
     margin-right: 20px;
     border-radius: 10px;
     border: 1px solid rgb(180, 180, 180);
+    padding-right: 13px;
+    transition: .5s;
+    background-color: rgb(245, 245, 245);
+}
+
+.order2 input:hover {
+    border: rgb(141, 141, 141) 1.2px solid
+}
+
+.order2 input:active {
+    border: 1px solid rgb(141, 141, 141) ;
 }
 
 .order3 {
@@ -75,7 +102,7 @@ body {
     justify-content: right;
     margin-top:2px;
     color: rgb(109, 109, 109);
-    flex-wrap: wrap;
+    
 }
 
 .header-flex2 div {font-size: 14.5px;}
@@ -85,6 +112,7 @@ body {
     align-content: center;
     margin-right: 26px;
     align-items: center;
+    cursor: pointer;
 }
 
 .category::before {
@@ -103,6 +131,7 @@ body {
     margin-right: 58px;
     padding-right: 23px;
     border-right: rgb(206, 206, 206) 1px solid;
+    cursor: pointer;
 }
 
 .market::before {
@@ -117,7 +146,10 @@ body {
     margin-left: 7px;
 }
 
-.offers {margin-right: 25px;}
+.offers {
+    margin-right: 25px;
+    cursor: pointer;
+}
 
 .offers::before {
     display: inline-block;
@@ -131,7 +163,10 @@ body {
     margin-left: 7px;
 }
 
-.my-digikala {margin-right: 25px;}
+.my-digikala {
+    margin-right: 25px;
+    cursor: pointer;
+}
 
 .my-digikala::before {
     display: inline-block;
@@ -145,7 +180,12 @@ body {
     margin-left: 7px;
 }
 
-.send {margin-right: 630px;}
+.send {
+    flex-grow: 1;
+    text-align: left;
+    padding-left: 20px;
+    cursor: default;
+}
 
 .send::after {
     display: inline-block;
@@ -170,7 +210,7 @@ body {
     height: auto;  
 }
 
- .left-top {
+.left-top {
     grid-area: left-top;
     border-radius: 20px;
     background-image: url('super.png') ,        
@@ -291,6 +331,10 @@ body {
     background-color: rgb(207, 207, 207);
 }
 
+.left-bottom , .left-top , .right-big {
+    cursor: pointer;
+}
+
 
 
 .offer-container {
@@ -313,9 +357,44 @@ body {
     border-radius: 20px;
     overflow: hidden;
     background-color: rgb(240, 240, 250);
+    cursor: pointer;
 }
 
 .n1 {visibility: hidden;}
+
+.offer-picture-container {
+    height: 230px;
+    /* border: 1px red solid; */
+}
+
+.macbook {
+    margin-top: 33px;
+    width: 100%;
+}
+
+.gshock {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 33px;
+}
+
+.iphone12 {
+    width: 186px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 22px;
+}
+
+.keyboard {
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 63px;
+}
 
 .offer-div2 {
     display: flex;
@@ -325,9 +404,9 @@ body {
 }
 
 .offer-name {
-    color: rgb(41, 41, 41);
+    color: rgb(56, 56, 56);
     font-weight: 10;
-    font-size: 14.5px;
+    font-size: 15.5px;
 }
 
 .offer-price {
@@ -364,6 +443,7 @@ body {
     margin: 30px 20px 20px;
     border-radius: 10px;
     box-shadow: 0 0 8px 1px rgb(197, 197, 197);
+    background-color: rgb(238, 238, 238);
 }
 
 .categories-header {
@@ -388,6 +468,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .cate-icon {
