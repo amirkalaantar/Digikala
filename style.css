@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    background-color: rgb(231, 230, 230);
+    background-color: rgb(235, 235, 235);
     font-family: yekan , Arial, Helvetica, sans-serif;
     direction: rtl;
 }
@@ -416,11 +416,31 @@ body {
 }
 
 .offer-price-sale {
-    text-decoration: line-through;
     color: rgb(148, 148, 148);
     font-size: 19px;
     position: relative;
     top: 14px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    
+}
+
+.priice {
+    text-decoration: line-through;
+    text-decoration-color: rgb(92, 92, 92);
+}
+
+.off-number {
+    background-color: rgb(255, 53, 53);
+    color: white;
+    height: 24px;
+    font-size: 16px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px 10px 10px 5px;
 }
 
 .offer-price-actual {
@@ -434,16 +454,14 @@ body {
     font-weight: bold;
 }
 
-
 .categories-container {
-    /* border: red 1px solid; */
     display: flex;
     flex-direction: column;
     height: auto;
     margin: 30px 20px 20px;
     border-radius: 10px;
-    box-shadow: 0 0 8px 1px rgb(197, 197, 197);
-    background-color: rgb(238, 238, 238);
+    box-shadow: 0 0 6px 1px rgb(197, 197, 197);
+    background-color: rgb(242, 242, 242);
 }
 
 .categories-header {
@@ -463,12 +481,20 @@ body {
 }
 
 .cate {
-    /* border: 1px solid red; */
+    /* border: 1px solid rgb(196, 196, 196); */
+    border: none;
+    border-radius: 10px;
     width: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
+    padding: 10px 0 5px;
+    transition: all .3s;
+}
+
+.cate:hover {
+    box-shadow: 0 0 5px 0 rgb(187, 187, 187);
 }
 
 .cate-icon {
@@ -476,6 +502,11 @@ body {
     text-align: center;
     /* background-color: rgb(102, 235, 69); */
     color: rgb(51, 51, 51);
+    transition: .3s;
+}
+
+.cate:hover .cate-icon {
+    font-size: 13.6px;
 }
 
 .cate-icon::before{
@@ -490,6 +521,7 @@ body {
     font-size: 29px;
     margin-bottom: 7px;
     color: rgb(78, 157, 248);
+    text-shadow: 0px 0px 1px black;
 }
 
 .icon1::before { content:"\f109";}
@@ -516,6 +548,7 @@ body {
     height: auto;
     padding: 10px 30px;
     background-color: rgb(243, 243, 243);
+    margin-top: 10px;
 }
 
 .footer-top {
