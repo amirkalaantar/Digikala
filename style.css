@@ -112,12 +112,53 @@ body {
 }
 
 .category {
-  display: flex;
+  display: block;
+  position: relative;
   align-content: center;
   margin-right: 26px;
   align-items: center;
   cursor: pointer;
+  /* border: red 1px solid; */
 }
+
+.category-list {
+    display: flex;
+    position: absolute;
+    visibility: collapse;
+    background-color: rgb(236, 236, 236);
+    color: rgb(56, 56, 56);
+    /* text-align: center; */
+    width: 100%;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 5px;
+}
+
+.category-list > div {
+    list-style-type: none;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid rgb(247, 12, 247); */
+    flex-grow: 1;
+    align-items: stretch;
+    margin: 8px 4px 4px;
+}
+
+.category:hover .category-list{
+    visibility: visible;
+}
+
+.category-list > div div {
+    margin-right: 9px;
+    font-size: 14px;
+    transition: .3s color;
+}
+
+.category-list > div div:hover {
+    color: rgb(253, 19, 78);
+}
+
+
 
 .category::before {
   display: inline-block;
@@ -456,8 +497,8 @@ body {
 }
 
 .offer-price-actual span {
-  font-size: 26px;
-  color: rgb(71, 71, 71);
+  font-size: 25px;
+  color: rgb(87, 87, 87);
   font-weight: bold;
 }
 
@@ -504,6 +545,7 @@ body {
   box-shadow: 0 0 5px 0 rgb(187, 187, 187);
 }
 
+
 .cate-icon {
   font-size: 13px;
   text-align: center;
@@ -512,9 +554,7 @@ body {
   transition: 0.3s;
 }
 
-.cate:hover .cate-icon {
-  font-size: 13.6px;
-}
+
 
 .cate-icon::before {
   display: block;
@@ -591,6 +631,10 @@ body {
   justify-content: space-between;
 }
 
+.logoback img {
+    cursor: pointer;
+}
+
 .logoback a {
   text-decoration: none;
   border: grey 1px solid;
@@ -632,6 +676,7 @@ body {
   justify-content: space-around;
   /* border: darkgreen 1px solid; */
   margin-top: 40px;
+  
 }
 
 .footer-icon {
@@ -643,6 +688,7 @@ body {
   font-size: 14px;
   position: relative;
   transition: 1s;
+  cursor: pointer;
 }
 
 .border-bottom {
@@ -774,6 +820,7 @@ body {
   border-radius: 5px;
   color: grey;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .email-submit:hover {
