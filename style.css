@@ -1,5 +1,10 @@
 * {
   box-sizing: border-box;
+    
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -7,6 +12,7 @@ body {
   background-color: rgb(235, 235, 235);
   font-family: yekan, Arial, Helvetica, sans-serif;
   direction: rtl;
+  
 }
 
 @font-face {
@@ -47,7 +53,6 @@ body {
 }
 
 .order1 {
-  /* border: 1px solid red; */
   flex-grow: 1;
   align-self: center;
   font-size: 25px;
@@ -118,47 +123,43 @@ body {
   margin-right: 26px;
   align-items: center;
   cursor: pointer;
-  /* border: red 1px solid; */
+  transition: .2s;
+  transition-delay: .1s;
 }
 
 .category-list {
-    display: flex;
-    position: absolute;
-    visibility: collapse;
-    background-color: rgb(236, 236, 236);
-    color: rgb(56, 56, 56);
-    /* text-align: center; */
-    width: 100%;
-    border: 1px solid rgb(212, 212, 212);
-    border-radius: 5px;
+  display: flex;
+  position: absolute;
+  visibility: collapse;
+  background-color: rgb(236, 236, 236);
+  color: rgb(56, 56, 56);
+  width: 100%;
+  border: 1px solid rgb(212, 212, 212);
+  border-radius: 5px;
 }
 
 .category-list > div {
-    list-style-type: none;
-    /* text-align: center; */
-    display: flex;
-    flex-direction: column;
-    /* border: 1px solid rgb(247, 12, 247); */
-    flex-grow: 1;
-    align-items: stretch;
-    margin: 8px 4px 4px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: stretch;
+  margin: 8px 4px 4px;
 }
 
 .category:hover .category-list{
-    visibility: visible;
+  visibility: visible;
 }
 
 .category-list > div div {
-    margin-right: 9px;
-    font-size: 14px;
-    transition: .3s color;
+  margin-right: 9px;
+  font-size: 14px;
+  transition: .3s color;
 }
 
 .category-list > div div:hover {
-    color: rgb(253, 19, 78);
+  color: rgb(253, 19, 78);
 }
-
-
 
 .category::before {
   display: inline-block;
@@ -170,6 +171,15 @@ body {
   font-weight: 900;
   content: "\f0c9";
   margin-left: 7px;
+  transition: .2s;
+}
+
+.category:hover {
+  color: rgb(53, 53, 53);
+}
+
+.category:hover::before {
+  color: rgb(248, 43, 94);
 }
 
 .market {
@@ -177,6 +187,15 @@ body {
   padding-right: 23px;
   border-right: rgb(206, 206, 206) 1px solid;
   cursor: pointer;
+  transition: .2s;
+}
+
+.market:hover {
+  color: rgb(53, 53, 53);
+}
+
+.market:hover::before {
+  color: rgb(19, 101, 253);
 }
 
 .market::before {
@@ -189,11 +208,21 @@ body {
   font-weight: 900;
   content: "\f291";
   margin-left: 7px;
+  transition: .2s;
 }
 
 .offers {
   margin-right: 25px;
   cursor: pointer;
+  transition: .2s;
+}
+
+.offers:hover {
+  color: rgb(53, 53, 53);
+}
+
+.offers:hover::before {
+  color: rgb(253, 19, 78);
 }
 
 .offers::before {
@@ -206,11 +235,25 @@ body {
   font-weight: 900;
   content: "\f541";
   margin-left: 7px;
+  transition: .2s;
+}
+
+.offer::before:hover {
+  color: rgb(37, 128, 18);
 }
 
 .my-digikala {
   margin-right: 25px;
   cursor: pointer;
+  transition: .2s;
+}
+
+.my-digikala:hover {
+  color: rgb(53, 53, 53);
+}
+
+.my-digikala:hover::before {
+  color: rgb(243, 78, 78);
 }
 
 .my-digikala::before {
@@ -220,9 +263,10 @@ body {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
   font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+  font-weight: 300;
   content: "\f2bd";
   margin-left: 7px;
+  transition: .2s;
 }
 
 .send {
@@ -259,7 +303,7 @@ body {
   grid-area: left-top;
   border-radius: 20px;
   background-image: url("super.png"),
-    radial-gradient(circle at -30% 0, rgb(157, 134, 209), rgb(142, 39, 173));
+  radial-gradient(circle at -30% 0, #ec7aa6, #e72c5b);
   background-repeat: no-repeat;
   background-size: 200px 200px, cover;
   background-position: 30px 15px, 0 0;
@@ -279,12 +323,11 @@ body {
 
 .left-bottom {
   grid-area: left-bottom;
-  background-image: url("lebas.png"),
-    radial-gradient(circle at -30% 0, rgb(102, 235, 69), rgb(39, 189, 26));
+  background-image: url("lebass.png"),
+  radial-gradient(circle at -30% 0, rgb(34, 158, 9), rgb(6, 158, 44));
   background-repeat: no-repeat, no-repeat;
-  background-size: 180px 180px, cover;
-  background-position: 30px 26px, 0 0;
-  background-position: 30px 15px, 0 0;
+  background-size: 340px 220px, cover;
+  background-position: -40px -3px, 0 0;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -303,7 +346,7 @@ body {
 .right-big {
   grid-area: big-right;
   background-image: url("mobile.png"),
-    radial-gradient(circle at -10% 0, rgb(89, 154, 253) 20%, rgb(82, 108, 255));
+  radial-gradient(circle at -10% 0, rgb(89, 154, 253) 20%, rgb(82, 108, 255));
   background-repeat: no-repeat, no-repeat;
   background-size: 360px 350px, cover;
   background-position: 50px 65px, 0 0;
@@ -349,7 +392,7 @@ body {
 }
 
 .takhfif {
-  font-size: 33px;
+  font-size: 35px;
 }
 
 .buyflex {
@@ -378,9 +421,7 @@ body {
   background-color: rgb(207, 207, 207);
 }
 
-.left-bottom,
-.left-top,
-.right-big {
+.left-bottom, .left-top, .right-big {
   cursor: pointer;
 }
 
@@ -393,6 +434,10 @@ body {
   background-color: rgb(255, 87, 65);
   margin-top: 10px;
   direction: rtl;
+  background-image: url('pishnahad.png');
+  background-repeat: no-repeat;
+  background-size: 220px 320px;
+  background-position: 96% 54%;
 }
 
 .offer-div {
@@ -413,7 +458,6 @@ body {
 
 .offer-picture-container {
   height: 230px;
-  /* border: 1px red solid; */
 }
 
 .macbook {
@@ -513,7 +557,6 @@ body {
 }
 
 .categories-header {
-  /* border: 1px solid black; */
   text-align: center;
   color: rgb(100, 100, 100);
   font-size: 21px;
@@ -522,14 +565,12 @@ body {
 
 .categories-bottom {
   display: flex;
-  /* border: hotpink 1px solid; */
   justify-content: space-around;
   margin-top: 13px;
   margin-bottom: 10px;
 }
 
 .cate {
-  /* border: 1px solid rgb(196, 196, 196); */
   border: none;
   border-radius: 10px;
   width: 120px;
@@ -545,16 +586,12 @@ body {
   box-shadow: 0 0 5px 0 rgb(187, 187, 187);
 }
 
-
 .cate-icon {
   font-size: 13px;
   text-align: center;
-  /* background-color: rgb(102, 235, 69); */
   color: rgb(51, 51, 51);
   transition: 0.3s;
 }
-
-
 
 .cate-icon::before {
   display: block;
@@ -610,7 +647,6 @@ body {
 }
 
 .footer-container {
-  /* border: rgb(0, 102, 255) solid 1px; */
   direction: rtl;
   height: auto;
   padding: 10px 30px;
@@ -626,7 +662,6 @@ body {
 
 .logoback {
   display: flex;
-  /* border: brown 1px solid; */
   align-items: center;
   justify-content: space-between;
 }
@@ -664,7 +699,6 @@ body {
 }
 
 .call {
-  /* border: cyan 1px solid; */
   color: rgb(59, 59, 59);
   font-size: 15px;
   font-weight: lighter;
@@ -674,7 +708,6 @@ body {
 .footer-icons {
   display: flex;
   justify-content: space-around;
-  /* border: darkgreen 1px solid; */
   margin-top: 40px;
   
 }
@@ -683,7 +716,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* border: 1px solid green; */
   color: rgb(104, 104, 104);
   font-size: 14px;
   position: relative;
@@ -739,12 +771,10 @@ body {
 
 .footer-columns {
   display: flex;
-  /* border: 1px solid salmon; */
   justify-content: space-between;
 }
 
 .footer-column {
-  /* border: green 1px solid; */
   font-size: 19px;
   color: rgb(110, 110, 110);
 }
@@ -768,7 +798,6 @@ body {
 .col4 {
   display: flex;
   flex-direction: column;
-  /* border: green  1px solid; */
   justify-content: space-between;
   flex-basis: 300px;
 }
@@ -854,7 +883,6 @@ body {
   display: flex;
   gap: 20px;
   justify-content: center;
-  /* border: green 1px solid; */
   align-items: center;
 
   margin-top: 35px;
@@ -868,10 +896,11 @@ body {
 }
 
 .namad1 {
-  background-image: url("neshanmeli.jpg");
-  background-size: 150px 100px;
-  background-position: -15px 10px;
+  background-image: url("neshanmeli.png");
+  background-size: 170px 120px;
+  background-position: -25px -2px;
   background-repeat: no-repeat;
+  cursor: pointer;
 }
 
 .namad2 {
@@ -879,11 +908,13 @@ body {
   background-size: 80px 90px;
   background-repeat: no-repeat;
   background-position: 20px 13px;
+  cursor: pointer;
 }
 
 .namad3 {
-  background-image: url("etemad.jpg");
-  background-size: 200px 100px;
+  background-image: url("etemad.png");
+  background-size: 300px 180px;
   background-repeat: no-repeat;
-  background-position: -42px 8px;
+  background-position: -90px -29px;
+  cursor: pointer;
 }
